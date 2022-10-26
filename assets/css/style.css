@@ -1,0 +1,259 @@
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: lavender;
+}
+
+.flex-box {
+  display: flex;
+}
+
+body {
+  font-family: "Trip Sans Regular", sans-serif;
+  font-size: 16px;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header img {
+  width: 200px;
+}
+
+.primary-nav {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Trip Sans Medium";
+}
+
+.primary-nav .menu-item {
+  /* background: red; */
+  padding: 15px;
+}
+
+.primary-nav button {
+  font-size: 14px;
+  background: black;
+  color: white;
+  padding: 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+h1 {
+  margin-top: 25px;
+  font-size: 54px;
+  font-weight: bold;
+  font-family: "Trip Sans Medium";
+}
+
+h1 span {
+  color: #ff5d5d;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 25px;
+  font-family: "Trip Sans Medium";
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: bold;
+  columns: grey;
+  font-family: "Trip Sans Medium";
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.secondary-nav {
+  display: flex;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.secondary-nav p {
+  flex: 1;
+  height: 25px;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.images {
+  /* background: salmon; */
+  margin-top: 50px;
+  height: 400px;
+  display: flex;
+  gap: 2px;
+}
+
+.images .left {
+  flex: 4;
+  /* background: blue; */
+  background-image: url("../img/quais.jpg");
+}
+
+.images .right {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.images .right-top {
+  /* background: green; */
+  background-image: url("../img/moto.jpg");
+
+  flex: 1;
+}
+
+.images .right-bottom {
+  /* background: yellow; */
+  background-image: url("../img/tour-eiffel.jpg");
+  flex: 1;
+}
+
+.images .center-background {
+  background-size: cover;
+  background-position: center;
+}
+
+button {
+  background: black;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.text-warning {
+  color: grey;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+/** Ville lumièère **/
+
+.text-city-intro {
+  flex: 1;
+  font-size: 14px;
+}
+
+.text-city-empty {
+  flex: 1;
+}
+
+/* Les immanquables **/
+
+/* Réglage général **/
+.must-0 {
+  height: 200px;
+  display: flex;
+  gap: 10px;
+}
+
+.must-0 p {
+  font-size: 14px;
+}
+
+/*******************************************************************
+/* Partie gauche textuelle */
+/******************************************************************/
+.must-1 {
+  /* background: green; */
+  flex: 1;
+}
+/* L'espace en dessous du texte */
+.must-1 p {
+  margin-bottom: 10px;
+}
+
+/* Le lien "Tout afficher" **/
+.must-1 a:link {
+  color: black;
+  font-size: 12px;
+}
+
+/*******************************************************************
+/* Partie droite avec les images */
+/******************************************************************/
+
+/* La div qui englobe les 3 images et qui occupe les 3/4 de l'espace*/
+.must-2 {
+  display: flex;
+  gap: 10px;
+  flex: 3;
+}
+
+/* Les div englobant les images qui occupent chacune la même largeur */
+.must-2 div {
+  flex: 1;
+}
+
+/* Le positionnement relatif des parents des images qui va servir à positionner le coeur */
+.must-21 {
+  position: relative;
+  flex: 3;
+}
+.must-22 {
+  position: relative;
+}
+.must-23 {
+  position: relative;
+}
+
+/* Les images de la partie "Se divertir" : utilisées en background */
+.divertir-21 .img-must {
+  background-image: url("../img/tour-eiffel.jpg");
+}
+.divertir-22 .img-must {
+  background-image: url("../img/moto.jpg");
+}
+.divertir-23 .img-must {
+  background-image: url("../img/moto.jpg");
+}
+
+/* Quelques éléments génériques : cercle avec coeur, positionnement des images, liens*/
+.circle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background-color: white;
+  top: 10px;
+  right: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.small-logo {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.img-must {
+  background-size: cover;
+  background-position: center;
+  height: 80%;
+}
+
+.link-must a {
+  text-decoration: none;
+  color: grey;
+  font-weight: bold;
+  font-size: 12px;
+  flex: 1;
+}
