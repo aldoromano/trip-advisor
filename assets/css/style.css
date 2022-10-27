@@ -233,6 +233,16 @@ button {
   background-image: url("../img/four-seasons.jpg");
 }
 
+/* Les images de la partie "Se restaurer" : utilisées en background */
+.restaurer-21 .img-must {
+  background-image: url("../img/verjus.jpg");
+}
+.restaurer-22 .img-must {
+  background-image: url("../img/faubourg.jpg");
+}
+.restaurer-23 .img-must {
+  background-image: url("../img/rue-nil.jpg");
+}
 .img-must img {
   height: 20px;
   width: 20px;
