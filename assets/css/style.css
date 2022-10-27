@@ -203,7 +203,6 @@ button {
 /* Le positionnement relatif des parents des images qui va servir à positionner le coeur */
 .must-21 {
   position: relative;
-  flex: 3;
 }
 .must-22 {
   position: relative;
@@ -214,13 +213,29 @@ button {
 
 /* Les images de la partie "Se divertir" : utilisées en background */
 .divertir-21 .img-must {
-  background-image: url("../img/tour-eiffel.jpg");
+  background-image: url("../img/eiffeltoren.jpg");
 }
 .divertir-22 .img-must {
-  background-image: url("../img/moto.jpg");
+  background-image: url("../img/cour-napoleon-et-pyramide.jpg");
 }
 .divertir-23 .img-must {
-  background-image: url("../img/moto.jpg");
+  background-image: url("../img/arc-de-triomphe-at-night.jpg");
+}
+
+/* Les images de la partie "Se reposer" : utilisées en background */
+.reposer-21 .img-must {
+  background-image: url("../img/bristol.jpg");
+}
+.reposer-22 .img-must {
+  background-image: url("../img/reserve.jpg");
+}
+.reposer-23 .img-must {
+  background-image: url("../img/four-seasons.jpg");
+}
+
+.img-must img {
+  height: 20px;
+  width: 20px;
 }
 
 /* Quelques éléments génériques : cercle avec coeur, positionnement des images, liens*/
@@ -238,6 +253,18 @@ button {
   align-items: center;
 }
 
+.square {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  background-color: green;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
 .small-logo {
   position: absolute;
   bottom: 10px;
@@ -245,6 +272,7 @@ button {
 }
 
 .img-must {
+  position: relative;
   background-size: cover;
   background-position: center;
   height: 80%;
