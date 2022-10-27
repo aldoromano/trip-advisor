@@ -23,6 +23,10 @@ header img {
   width: 200px;
 }
 
+header .fa-solid {
+  display: none;
+}
+
 .primary-nav {
   display: flex;
   align-items: center;
@@ -90,6 +94,9 @@ h3 {
   cursor: pointer;
 }
 
+.secondary-nav .nav-hidden {
+  display: none;
+}
 .images {
   /* background: salmon; */
   margin-top: 50px;
@@ -193,24 +200,19 @@ button {
   display: flex;
   gap: 10px;
   flex: 3;
+  overflow-x: scroll;
+  gap: 15px;
 }
 
 /* Les div englobant les images qui occupent chacune la même largeur */
-.must-2 div {
-  flex: 1;
-}
 
 /* Le positionnement relatif des parents des images qui va servir à positionner le coeur */
-.must-21 {
-  position: relative;
-}
-.must-22 {
-  position: relative;
-}
-.must-23 {
-  position: relative;
-}
 
+.scroll-item {
+  position: relative;
+  flex: calc((100% / 3) - 10px);
+  flex-shrink: 0;
+}
 /* Les images de la partie "Se divertir" : utilisées en background */
 .divertir-21 .img-must {
   background-image: url("../img/eiffeltoren.jpg");
@@ -221,7 +223,12 @@ button {
 .divertir-23 .img-must {
   background-image: url("../img/arc-de-triomphe-at-night.jpg");
 }
-
+.divertir-24 .img-must {
+  background-image: url("../img/vue-de-la-cour-d-honneur.jpg");
+}
+.divertir-25 .img-must {
+  background-image: url("../img/the-bookstore.jpg");
+}
 /* Les images de la partie "Se reposer" : utilisées en background */
 .reposer-21 .img-must {
   background-image: url("../img/bristol.jpg");
@@ -294,4 +301,91 @@ button {
   font-weight: bold;
   font-size: 12px;
   flex: 1;
+}
+
+.hide-scrollbar {
+  overflow: auto;
+  -ms-overflow-style: none; /* IE 11 */
+  scrollbar-width: none; /* Firefox 64 */
+}
+
+/* Large */
+@media (max-width: 1184px) {
+  .container {
+    max-width: 1024px;
+    padding: 20px;
+    background: rgb(219, 219, 162);
+  }
+  .secondary-nav {
+    flex-wrap: wrap;
+  }
+  .secondary-nav p {
+    min-width: 150px;
+    max-width: 200px;
+    /* flex-shrink: 0; */
+  }
+
+  .secondary-nav .nav-hidden {
+    display: flex;
+  }
+}
+
+/* Desktop - Labtop */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 968px;
+    padding: 20px;
+    background: rgb(79, 59, 107);
+  }
+
+  .secondary-nav {
+    flex-wrap: wrap;
+  }
+  .secondary-nav p {
+    min-width: 150px;
+    max-width: 200px;
+    /* flex-shrink: 0; */
+  }
+  .secondary-nav .nav-hidden {
+    display: flex;
+  }
+
+  .menu-item span {
+    display: none;
+  }
+}
+
+/* Téléphones / Tablettes */
+@media (max-width: 768px) {
+  body {
+    font-size: 50%;
+  }
+  .container {
+    max-width: 768px;
+
+    padding: 20px;
+    background: rgb(10, 238, 64);
+  }
+  .secondary-nav {
+    flex-wrap: wrap;
+    flex-shrink: 0;
+  }
+  .secondary-nav p {
+    /* min-width: 150px;
+    max-width: 250px; */
+  }
+  .menu-item {
+    display: none;
+  }
+
+  .images .right {
+    display: none;
+  }
+
+  header img {
+    display: none;
+  }
+  header .fa-solid {
+    display: block;
+  }
 }
