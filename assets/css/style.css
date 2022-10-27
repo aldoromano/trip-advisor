@@ -383,11 +383,21 @@ button {
     flex-direction: column;
   }
 
-  .scroll-item {
+  /* .scroll-item {
     flex: none;
     width: 500px;
     height: 500px;
+  } */
+
+  .scroll-item {
+    /* width: 100vw;
+    height: 300px;
+    flex: 1; */
+    position: relative;
+    flex: calc(100% - 60px);
+    flex-shrink: 0;
   }
+
   header img {
     display: none;
   }
