@@ -198,7 +198,6 @@ button {
 /* La div qui englobe les 3 images et qui occupe les 3/4 de l'espace*/
 .must-2 {
   display: flex;
-  gap: 10px;
   flex: 3;
   overflow-x: scroll;
   gap: 15px;
@@ -320,8 +319,9 @@ button {
     flex-wrap: wrap;
   }
   .secondary-nav p {
-    min-width: 150px;
-    max-width: 200px;
+    /* min-width: 150px;
+    max-width: 200px; */
+    flex: calc((100% / 4) - 80px);
     /* flex-shrink: 0; */
   }
 
@@ -370,10 +370,7 @@ button {
     flex-wrap: wrap;
     flex-shrink: 0;
   }
-  .secondary-nav p {
-    /* min-width: 150px;
-    max-width: 250px; */
-  }
+
   .menu-item {
     display: none;
   }
@@ -382,6 +379,15 @@ button {
     display: none;
   }
 
+  .must-0 {
+    flex-direction: column;
+  }
+
+  .scroll-item {
+    flex: none;
+    width: 500px;
+    height: 500px;
+  }
   header img {
     display: none;
   }
