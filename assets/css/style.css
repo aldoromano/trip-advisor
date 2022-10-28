@@ -164,7 +164,7 @@ button {
 
 /* Réglage général **/
 .must-0 {
-  height: 200px;
+  /* height: 200px; */
   display: flex;
   gap: 10px;
 }
@@ -208,6 +208,7 @@ button {
 /* Le positionnement relatif des parents des images qui va servir à positionner le coeur */
 
 .scroll-item {
+  height: 300px;
   position: relative;
   flex: calc((100% / 3) - 10px);
   flex-shrink: 0;
@@ -357,8 +358,8 @@ button {
 
 /* Téléphones / Tablettes */
 @media (max-width: 768px) {
-  body {
-    font-size: 50%;
+  html {
+    font-size: 80%;
   }
   .container {
     max-width: 768px;
@@ -391,7 +392,7 @@ button {
 
   .scroll-item {
     /* width: 100vw;
-    height: 300px;
+    height: 300px;gf
     flex: 1; */
     position: relative;
     flex: calc(100% - 60px);
